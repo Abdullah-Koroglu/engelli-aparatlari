@@ -3,6 +3,18 @@ import Head from 'next/head'
 import { useEffect, useState } from "react";
 
 import { Box, Heading, Flex, Text, Button, Link, color } from "@chakra-ui/react";
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuIcon,
+  MenuCommand,
+  MenuDivider,
+} from "@chakra-ui/react"
 
 const MenuItems = ({ children }) => (
   <Text mt={{ base: 4, md: 0 }} mr={6} display="block">
@@ -19,7 +31,7 @@ const Header = props => {
     <Flex
       w='100%'
       pos='fixed'
-      zIndex={10}
+      zIndex={10000}
       as="nav"
       align="center"
       justify="center"
@@ -61,7 +73,25 @@ const Header = props => {
             Anasayfa
           </Link>
         </MenuItems>
-        <MenuItems>Ürünlerimiz</MenuItems>
+        <Menu>
+  <MenuButton as={Button} bg='white' mr='1rem'>
+    Ürünlerimiz
+  </MenuButton>
+  <MenuList>
+    <MenuItem><Link href='/sag-ayak-engelli'>
+Sağ Ayak Engelli
+</Link></MenuItem>
+    <MenuItem><Link href='/elden-gaz-kilitli'>
+İki Ayak Engelli Pro
+</Link></MenuItem>
+    <MenuItem><Link href='/elden-gaz'>
+    İki Ayak Engelli
+</Link></MenuItem>
+    <MenuItem><Link href='/sol-el-engelli'>
+    İki Ayak Engelli Pro
+</Link></MenuItem>
+  </MenuList>
+</Menu>
         <MenuItems>
         <Link href='/faq' _hover={{stroke : 'white' , opacity : '70%'}}>
             Sık Sorulan Sorular
@@ -74,3 +104,4 @@ const Header = props => {
 };
 
 export default Header;
+
