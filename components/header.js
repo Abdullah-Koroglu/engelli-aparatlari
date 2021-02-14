@@ -50,9 +50,8 @@ const Header = props => {
       </Flex>
 
       <Flex 
-       
-      onClick={handleToggle} flexDir='column'>
-        <Flex display={{ base: "block", md: "none" }}>
+      flexDir='column'>
+        <Flex display={{ base: "block", md: "none" }} onClick={handleToggle} >
           <svg
           fill="blue"
           width="12px"
