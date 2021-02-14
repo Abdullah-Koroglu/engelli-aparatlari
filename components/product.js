@@ -5,13 +5,15 @@ import styles from '../styles/Home.module.css'
 
 export default function Product({imgUrl , Header , Content , targetUrl}) {
     return (
-        <Flex flexDir='column' align='center' maxW='xs' onClick={()=>{location.href=targetUrl}} mx='1rem' _hover={{ opacity : '75%' }}>
-            {/* <main className={styles.main}> */}
+        <Flex flexDir='column' align='center' maxW={["5xs", "4xs", "2xs", "xs"]}  onClick={()=>{location.href=targetUrl}} mx='1rem' _hover={{ opacity : '75%' }}>
             <Image
                 _hover={{ borderRadius : 'lg' }}
                 justifySelf='center'
                 borderRadius="full"
-                boxSize="3xs"
+                fit='cover'
+                w={["200px", "250px", "270px", "330px"]}
+                h={["200px", "250px", "270px", "330px"]}
+                // boxSize={["5xs", "4xs", "2xs", "xs"]}
                 objectFit="cover"
                 src={imgUrl} />
             <Text textAlign='center' fontSize='xl'>
@@ -20,7 +22,6 @@ export default function Product({imgUrl , Header , Content , targetUrl}) {
             <Text textAlign='center' mt='1rem'>
                 {Content}
                 </Text>
-            {/* </main> */}
         </Flex>
     )
 }

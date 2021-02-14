@@ -1,19 +1,10 @@
 import { Text, Box, Heading, Flex, AspectRatio } from "@chakra-ui/react"
 import { Image } from "@chakra-ui/image"
-import { useEffect, useState } from "react";
 import styles from '../styles/Home.module.css'
 
 
 
 export default function Banner() {
-    const [Window , setWindow] = useState();
-    useEffect(()=>{
-        if (process.browser) {
-            setWindow(window.innerWidth)
-            console.log(Window);
-        }
-    },[])
-    
     return (
             <main className={styles.main}>
                 <Flex w='100%'  align='center' justify='center' zIndex={0} boxShadow="dark-lg">

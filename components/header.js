@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react"
 
 const MenuItems = ({ children }) => (
-  <Text mt={{ base: 4, md: 0 }} mr={6} display="block">
+  <Text mt={{ base: 0, md: 0 }} mr={6} display="block">
     {children}
   </Text>
 );
@@ -44,7 +44,7 @@ const Header = props => {
       {...props}
     >
       <Flex align="center" mr={5}>
-        <Heading as="h1" size="lg" letterSpacing={"0rem"} padding='4' textAlign='center'>
+        <Heading as="h1" fontSize={["sm", "lg", "2xl", "4xl"]} letterSpacing={"0rem"} padding='4' textAlign='center' >
           Engelli Araç Aparatları EN-AR
         </Heading>
       </Flex>
@@ -62,7 +62,7 @@ const Header = props => {
       </Flex>
 
       <Flex
-        display={{ sm: show ? "block" : "none", md: "flex" }}
+        display={{ sm: show ? "block" : "none", md: "flex" , base: show ? "block" : "none" }}
         width={{ sm: "full", md: "auto" }}
         alignItems="center"
         flexGrow={0.1}
