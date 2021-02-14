@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 
 export default function page() {
     return (
-        <Flex w='100%' flexDir='column'  >
+        <Flex w='100%' flexDir='column'  bg='white'>
             <Flex mt='10rem' flexDir='column' mx='1rem' >
                 <Box align='center'>
                     <Heading as='h1' color='gray.800' my='1rem'>

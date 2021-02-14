@@ -2,7 +2,7 @@ import React from "react";
 import Head from 'next/head'
 import { useEffect, useState } from "react";
 
-import { Box, Heading, Flex, Text, Button, Link, color } from "@chakra-ui/react";
+import { Box, Heading, Flex, Text, Button, Link, color, Center } from "@chakra-ui/react";
 import {
   Menu,
   MenuButton,
@@ -33,25 +33,27 @@ const Header = props => {
       pos='fixed'
       zIndex={10000}
       as="nav"
-      // align="center"
-      // justify="center"
-      wrap="nowrap"
+      align={{base : "flex-start" , md : "center"}}
+      justify='space-between'
       padding="1rem"
       px='2rem'
       bg="white"
       color="blue.800"
-      flexDir='column'
+      flexDir={{base : "row-reverse" , md: "column"}}
       boxShadow="dark-lg"
       {...props}
     >
-      <Flex align="center" mr={5}>
+      <Flex  >
         <Heading as="h1" fontSize={["sm", "lg", "2xl", "4xl"]} letterSpacing={"0rem"} pb='4' textAlign='center' >
           Engelli Araç Aparatları EN-AR
         </Heading>
       </Flex>
 
-      <Flex display={{ base: "block", md: "none" }} onClick={handleToggle}>
-        <svg
+      <Flex 
+       
+      onClick={handleToggle} flexDir='column'>
+        <Flex display={{ base: "block", md: "none" }}>
+          <svg
           fill="blue"
           width="12px"
           viewBox="0 0 20 20"
@@ -60,14 +62,14 @@ const Header = props => {
           <title>Menu</title>
           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
         </svg>
-      </Flex>
-
+        </Flex>
       <Flex
         display={{ sm: show ? "block" : "none", md: "flex", base: show ? "block" : "none" }}
-        width={{ sm: "full", md: "auto" }}
+        width={{ sm: "auto", md: "auto" , base: "auto"}}
         alignItems="center"
         flexGrow={0.1}
         justify='center'
+        mt={{base : '7' , md : "0"}}
       >
         <Menu >
           <MenuItems>
@@ -94,9 +96,10 @@ const Header = props => {
           </MenuList>
           <MenuItems>
           <Link href='/faq' _hover={{ stroke: 'white', opacity: '70%' }}>
-            Sık Sorulan Sorular
+            Popüler Sorular
           </Link></MenuItems>
         </Menu>
+      </Flex>
       </Flex>
     </Flex>
   );

@@ -14,7 +14,7 @@ export default function Card() {
     }
     return (
 
-        <Flex w="99%" align='center' flexDir='column' borderRadius="xl" overflow="hidden" mt='-1rem' zIndex='sticky' bg="gray.200" boxShadow="dark-lg">
+        <Flex w="100%" align='center' flexDir='column' borderRadius="2xl" overflow="hidden" mt='-1rem' zIndex='10' bg="gray.200" boxShadow="dark-lg">
             <Heading as="h1" fontSize={["2xl", "3xl", "4xl"]} letterSpacing={"-0.1rem"} pt='3rem' textAlign='center' color='gray.800'>
                 Ürünlerimiz
             </Heading>
