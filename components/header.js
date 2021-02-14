@@ -33,10 +33,11 @@ const Header = props => {
       pos='fixed'
       zIndex={10000}
       as="nav"
-      align="center"
-      justify="center"
+      // align="center"
+      // justify="center"
       wrap="nowrap"
-      padding="1.5rem"
+      padding="1rem"
+      px='2rem'
       bg="white"
       color="blue.800"
       flexDir='column'
@@ -44,7 +45,7 @@ const Header = props => {
       {...props}
     >
       <Flex align="center" mr={5}>
-        <Heading as="h1" fontSize={["sm", "lg", "2xl", "4xl"]} letterSpacing={"0rem"} padding='4' textAlign='center' >
+        <Heading as="h1" fontSize={["sm", "lg", "2xl", "4xl"]} letterSpacing={"0rem"} pb='4' textAlign='center' >
           Engelli Araç Aparatları EN-AR
         </Heading>
       </Flex>
@@ -62,40 +63,40 @@ const Header = props => {
       </Flex>
 
       <Flex
-        display={{ sm: show ? "block" : "none", md: "flex" , base: show ? "block" : "none" }}
+        display={{ sm: show ? "block" : "none", md: "flex", base: show ? "block" : "none" }}
         width={{ sm: "full", md: "auto" }}
         alignItems="center"
         flexGrow={0.1}
         justify='center'
       >
-        <MenuItems>
-          <Link href='/' _hover={{stroke : 'white' , opacity : '70%'}}>
-            Anasayfa
+        <Menu >
+          <MenuItems>
+            <Link href='/' _hover={{ stroke: 'white', opacity: '70%' }}>
+              Anasayfa
           </Link>
-        </MenuItems>
-        <Menu>
-  <MenuButton as={Button} bg='white' mr='20px'  px='-100px' py='-100px' fontWeight='medium'>
-    Ürünlerimiz
+          </MenuItems>
+          <MenuButton as={Button} bg='white' mr='20px' px='-100px' py='-100px' fontWeight='medium'>
+            Ürünlerimiz
   </MenuButton>
-  <MenuList>
-    <MenuItem><Link href='/sag-ayak-engelli'>
-Sağ Ayak Engelli
+          <MenuList>
+            <MenuItem><Link href='/sag-ayak-engelli'>
+              Sağ Ayak Engelli
 </Link></MenuItem>
-    <MenuItem><Link href='/elden-gaz-kilitli'>
-İki Ayak Engelli Pro
+            <MenuItem><Link href='/elden-gaz-kilitli'>
+              İki Ayak Engelli Pro
 </Link></MenuItem>
-    <MenuItem><Link href='/elden-gaz'>
-    İki Ayak Engelli
+            <MenuItem><Link href='/elden-gaz'>
+              İki Ayak Engelli
 </Link></MenuItem>
-    <MenuItem><Link href='/sol-el-engelli'>
-    Sol El Engelli
+            <MenuItem><Link href='/sol-el-engelli'>
+              Sol El Engelli
 </Link></MenuItem>
-  </MenuList>
-</Menu>
-        <MenuItems>
-        <Link href='/faq' _hover={{stroke : 'white' , opacity : '70%'}}>
+          </MenuList>
+          <MenuItems>
+          <Link href='/faq' _hover={{ stroke: 'white', opacity: '70%' }}>
             Sık Sorulan Sorular
           </Link></MenuItems>
+        </Menu>
       </Flex>
     </Flex>
   );

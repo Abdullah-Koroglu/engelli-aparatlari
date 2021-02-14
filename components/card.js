@@ -15,10 +15,10 @@ export default function Card() {
     return (
 
         <Flex w="99%" align='center' flexDir='column' borderRadius="xl" overflow="hidden" mt='-1rem' zIndex='sticky' bg="gray.200" boxShadow="dark-lg">
-            <Heading as="h1" size="2xl" letterSpacing={"-0.1rem"} pt='3rem' textAlign='center' color='gray.800'>
+            <Heading as="h1" fontSize={["2xl", "3xl", "4xl"]} letterSpacing={"-0.1rem"} pt='3rem' textAlign='center' color='gray.800'>
                 Ürünlerimiz
             </Heading>
-            <Text m='0.4rem' fontSize='xl'>
+            <Text m='0.4rem' fontSize={["md", "lg", "xl"]} textAlign='center'>
                 Ürünlerin Videolarını Görmek İçin Fotoğraflara Tıklayın
             </Text>
             <Flex justify='space-around' w='100%' py='5rem' >

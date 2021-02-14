@@ -16,7 +16,7 @@ export default function Product({imgUrl , Header , Content , targetUrl}) {
                 // boxSize={["5xs", "4xs", "2xs", "xs"]}
                 objectFit="cover"
                 src={imgUrl} />
-            <Text textAlign='center' fontSize='xl'>
+            <Text textAlign='center' fontSize={["xl", "2xl", "3xl"]}>
                 {Header}
             </Text>
             <Text textAlign='center' mt='1rem'>
