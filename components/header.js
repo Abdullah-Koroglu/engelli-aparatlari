@@ -74,7 +74,7 @@ const Header = props => {
           </Link>
         </MenuItems>
         <Menu>
-  <MenuButton as={Button} bg='white' mr='1rem'>
+  <MenuButton as={Button} bg='white' mr='20px'  px='-100px' py='-100px' fontWeight='medium'>
     Ürünlerimiz
   </MenuButton>
   <MenuList>
@@ -88,7 +88,7 @@ Sağ Ayak Engelli
     İki Ayak Engelli
 </Link></MenuItem>
     <MenuItem><Link href='/sol-el-engelli'>
-    İki Ayak Engelli Pro
+    Sol El Engelli
 </Link></MenuItem>
   </MenuList>
 </Menu>
@@ -97,8 +97,6 @@ Sağ Ayak Engelli
             Sık Sorulan Sorular
           </Link></MenuItems>
       </Flex>
-
-
     </Flex>
   );
 };

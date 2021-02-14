@@ -4,11 +4,11 @@ import styles from '../styles/Home.module.css'
 export default function page() {
     return (
         <Flex flexDir='column' >
-            <main className={styles.main} style={{ margin: ' 11rem' }}>
+            <Flex  flexDir='column' mt='11rem' mx='1rem'>
                 <Heading as='h1' color='gray.800' my='1rem'>
                 Sık Sorulan Sorular
                 </Heading>
-                <Box w='6xl' align='start'>
+                <Box w='100%' align='start'>
                 <Text as='h2' my='1rem'  fontSize='xl' fontWeight='bold'>
                 ÖTV muafiyetinden kimler yararlanır?
                 </Text>
@@ -16,7 +16,7 @@ export default function page() {
                     İl sağlık kurulundan alınan raporla ilave aparat montajı ile araç kullanabileceği tespit edilen bedensel engelliler ÖTV muafiyetinden yararlanır. Raporda ÖTV muafiyetinden yararlanır ibaresi ve ilave aparat kodları yazılı olmalıdır.
                 </Text>
                 </Box>
-                <Box w='6xl' align='start'>
+                <Box w='100%' align='start'>
                 <Text as='h2' my='1rem'  fontSize='xl' fontWeight='bold'>
                 ÖTV muafiyeti için engel oranı en az yüzde kaç olmalı?
                 </Text>
@@ -24,7 +24,7 @@ export default function page() {
                     Oran önemli değil. Aracı kullanabilmesi için ilave aparata ihtiyaç duyuyor olması gereklidir.
                     </Text>
                 </Box>
-                <Box w='6xl' align='start'>
+                <Box w='100%' align='start'>
                 <Text as='h2' my='1rem'  fontSize='xl' fontWeight='bold'>
                 Ortopedik engelliler dışındaki engelliler ÖTV muafiyetinden yararlanabilir mi?
                 </Text>
@@ -32,7 +32,7 @@ export default function page() {
                     Ortopedik engelliler dışındaki engelliler, engel oranı %90 ve üzeri ise engelli taşıma aracı olarak herhangi bir ilave aparata gerek duymaksızın ÖTV muafiyetli araç alabilirler. Bu kişiler sürücü belgesi alamayacağı için araç, aile fertleri veya sözleşmeli bir sürücü tarafından kullanılır.
                     </Text>
                 </Box>
-                <Box w='6xl' align='start'>
+                <Box w='100%' align='start'>
                 <Text as='h2' my='1rem'  fontSize='xl' fontWeight='bold'>
                 Engelli aracını engelli dışında kimler kullanabilir?
                 </Text>
@@ -40,8 +40,7 @@ export default function page() {
                     Engelli aracının TSE kontrolünde engelli olmayanların kullanılmasında bir sakınca olmadığının tespit edilmesi durumunda; engellinin 3 dereceye kadar kan veya hısımlık bağı olanlar kullanabilir.
                     </Text>
                 </Box>
-                
-            </main>
+            </Flex>
         </Flex>
     )
 }

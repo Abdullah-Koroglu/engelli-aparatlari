@@ -4,17 +4,17 @@ import styles from '../styles/Home.module.css'
 export default function page() {
     return (
         <Flex flexDir='column' >
-            <main className={styles.main} style={{ margin: ' 11rem' }}>
-                <Heading as='h1' color='gray.800' my='1rem'>
-                    İki Ayak Engelli Pro
+            <Flex mt='10rem' flexDir='column' align='center' mx='1rem'>
+            <Heading as='h1' color='gray.800' my='1rem'>
+                    Sol El Engelli
                 </Heading>
-                <Box w='6xl' align='center'>
+                <Box w='100%' align='center'>
                     <Image src="/ek_kol.jpg" alt="Ek_pedal" />
                 </Box>
                 <Text my='1rem' textAlign='center'>
                     Sol eli engelliler için ilave sinyal kolu .
                 </Text>
-            </main>
+            </Flex>
         </Flex>
 
     )

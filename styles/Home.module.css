@@ -22,8 +22,9 @@
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 5rem;
+  align-items: stretch;
+  margin-top: 3rem;
+  flex-direction: column;
 }
 
 .footer img {
