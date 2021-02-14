@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Product({imgUrl , Header , Content , targetUrl}) {
     return (
-        <Flex flexDir='column' align='center' maxW='xs' onClick={()=>{console.log(targetUrl)}} mx='1rem'>
+        <Flex flexDir='column' align='center' maxW='xs' onClick={()=>{location.href=targetUrl}} mx='1rem' _hover={{ opacity : '75%' }}>
             {/* <main className={styles.main}> */}
             <Image
                 _hover={{ borderRadius : 'lg' }}

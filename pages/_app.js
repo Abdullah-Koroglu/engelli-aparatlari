@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import Header from '../components/header'
-// import Footer from "./footer";
+import Footer from "../components/footer";
 import { ThemeProvider , theme , CSSReset } from "@chakra-ui/react"
 
 
@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
     <Header/>
     <CSSReset/>
     <Component {...pageProps} />
-    {/* <Footer/> */}
+    <Footer/>
   </ThemeProvider>
   )
 }

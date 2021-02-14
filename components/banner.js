@@ -19,7 +19,7 @@ export default function Banner() {
                 <Flex w='100%'  align='center' justify='center' zIndex={0} boxShadow="dark-lg">
                     <Image src='/banner.jpg'  w='100%' />
                     <Flex justify='center' h='100%' align='center' bg='blackAlpha.700' flexDir='column'>
-                        <Heading color='whiteAlpha.900' textShadow="1px 1px #555555"  as="h1" maxW='2xl' textAlign='center' fontSize={parseInt(Window / 25)} ml={-Window}>
+                        <Heading fontFamily='Georgia' color='whiteAlpha.900' textShadow="1px 1px #555555"  as="h1" maxW='2xl' textAlign='center' fontSize={parseInt(Window / 25)} ml={-Window}>
                             Engelli Araç Aparatları
                         </Heading>
                         <Text  ml={-Window} color='whiteAlpha.900' textShadow="1px 1px #555555"  as="h1" maxW='2xl'>

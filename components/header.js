@@ -2,7 +2,7 @@ import React from "react";
 import Head from 'next/head'
 import { useEffect, useState } from "react";
 
-import { Box, Heading, Flex, Text, Button } from "@chakra-ui/react";
+import { Box, Heading, Flex, Text, Button, Link, color } from "@chakra-ui/react";
 
 const MenuItems = ({ children }) => (
   <Text mt={{ base: 4, md: 0 }} mr={6} display="block">
@@ -17,7 +17,7 @@ const Header = props => {
 
   return (
     <Flex
-    w='100%'
+      w='100%'
       pos='fixed'
       zIndex={10}
       as="nav"
@@ -56,9 +56,16 @@ const Header = props => {
         flexGrow={0.1}
         justify='center'
       >
-        <MenuItems>Anasayfa</MenuItems>
+        <MenuItems>
+          <Link href='/' _hover={{stroke : 'white' , opacity : '70%'}}>
+            Anasayfa
+          </Link>
+        </MenuItems>
         <MenuItems>Ürünlerimiz</MenuItems>
-        <MenuItems>Popüler Sorular</MenuItems>
+        <MenuItems>
+        <Link href='/faq' _hover={{stroke : 'white' , opacity : '70%'}}>
+            Sık Sorulan Sorular
+          </Link></MenuItems>
       </Flex>
 
 
