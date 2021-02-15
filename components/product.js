@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 export default function Product({imgUrl , Header , Content , targetUrl}) {
     return (
-        <Flex flexDir='column' align='center' maxW={["5xs", "4xs", "2xs", "xs"]}  onClick={()=>{location.href=targetUrl}} mx='1rem' _hover={{ opacity : '75%' }}>
-            <motion.div whileHover={{position : 'relative' , zIndex:1, scale : [1 ,1.15 , 1.1], transition: {duration : 0.18}}}>
+        <motion.div whileHover={{position : 'relative' , zIndex:1, scale : [1 ,1.15 , 1.1], transition: {duration : 0.18}}}>
+            <Flex flexDir='column' align='center' maxW={["5xs", "4xs", "2xs", "xs"]}  onClick={()=>{location.href=targetUrl}} mx='1rem' _hover={{ opacity : '75%' }}>
             <Image
                 justifySelf='center'
                 borderRadius="full"
@@ -21,7 +21,7 @@ export default function Product({imgUrl , Header , Content , targetUrl}) {
             </Text>
             <Text textAlign='center' mt='1rem'>
                 {Content}
-                </Text></motion.div>    
-        </Flex>
+                </Text>    
+        </Flex></motion.div>
     )
 }
