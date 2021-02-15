@@ -1,9 +1,11 @@
 import { Text, Box, Heading, Flex, AspectRatio, Image } from "@chakra-ui/react"
+import { motion } from "framer-motion"
 import styles from '../styles/Home.module.css'
 
 export default function page() {
     return (
-        <Flex w='100%' flexDir='column'  bg='white'>
+        <motion.div>
+        <Flex w='100%' flexDir='column'  bg='white' exit={{opacity : 0}} initial={{opacity : 0}}>
             <Flex mt='10rem' flexDir='column' mx='1rem' >
                 <Box align='center'>
                     <Heading as='h1' color='gray.800' my='1rem'>
@@ -26,6 +28,6 @@ export default function page() {
                 </Box>
             </Flex>
         </Flex>
-
+        </motion.div>
     )
 }
