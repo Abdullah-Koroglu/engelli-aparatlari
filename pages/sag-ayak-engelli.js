@@ -11,7 +11,7 @@ export default function page() {
                     <Heading as='h1' color='gray.800' my='1rem'>
                         Sağ Ayak Engelli
                     </Heading>
-                    <Image src="/ek_pedal.jpeg" alt="Ek_pedal" />
+                    <Image src="/ek_pedal.webp" alt="Ek_pedal" />
                 </Box>
                 <Text my='1rem' textAlign='center'>
                     Sağ  ayağı engelli olanların,  gaz ve freni sol ayakla kullanmalarını sağlayan aparat .</Text>

@@ -25,7 +25,7 @@ export default function Card() {
                 <SimpleGrid columns={[1, null, 2]} justify='space-around' spacingY='40px' spacingX={["200px", "170px", "200px", "300px"]}>
                      <Box color="gray.700">
                     <Product
-                        imgUrl={'ek_pedal.jpeg'}
+                        imgUrl={'ek_pedal.webp'}
                         targetUrl={'/sag-ayak-engelli'}
                         Header={'Sağ Ayak Engelli'}
                         Content={'Sağ ayağı engelli olanların, gaz ve freni sol ayakla kullanmalarını sağlayan aparat.'}
@@ -33,7 +33,7 @@ export default function Card() {
                 </Box>
                 <Box color="gray.700" >
                 <Product
-                        imgUrl={'elden_gaz_kilitli.jpeg'}
+                        imgUrl={'elden_gaz_kilitli.webp'}
                         targetUrl={'/elden-gaz-kilitli'}
                         Header={'İki Ayak Engelli Pro'}
                         Content={'İki ayağı engelli olanlar için fren kilitlemeli sistem. Fren gaz el aparatı, aparat ileri itildiğinde fren geri çekildiğinde gaz verir. Araç fren konumunda iken el aparatın üzerinden kaldırıldığında fren otomatik kitlenir . Aparat üzerine el konulduğunda elin ağırlığı ile kilit iptal olur.'}
@@ -41,7 +41,7 @@ export default function Card() {
                 </Box>
                 <Box color="gray.700">
                 <Product
-                        imgUrl={'elden_gaz.jpeg'}
+                        imgUrl={'elden_gaz.webp'}
                         targetUrl={'/elden-gaz'}
                         Header={'İki Ayak Engelli'}
                         Content={'İki ayağı engelli olanlar için klasik basit sistem. Aparat ileri itildiğinde fren yapar geri çekildiğinde gaz verir.'}
@@ -49,7 +49,7 @@ export default function Card() {
                 </Box>
                 <Box color="gray.700">
                 <Product
-                        imgUrl={'sol-el-engelli.jpg'}
+                        imgUrl={'sol-el-engelli.webp'}
                         targetUrl={'/sol-el-engelli'}
                         Header={'Sol El Engelli'}
                         Content={'Sol eli engelliler için ilave sinyal kolu .'}
@@ -58,7 +58,7 @@ export default function Card() {
                 </SimpleGrid>
                
             </Flex>
-            <Flex bgImage="url('/night.jpeg')" p='3rem' w='100%' flexDir='column' align='start'>
+            <Flex bgImage="url('/night.webp')" p='3rem' w='100%' flexDir='column' align='start'>
                 <Heading letterSpacing={"-0.1rem"} textAlign='center' color='white'>
                     İletişim
             </Heading>

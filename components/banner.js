@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css'
 export default function Banner() {
     return (
                 <Flex w='100%'  align='center' justify='center' zIndex={0} boxShadow="dark-lg">
-                    <Image src='/banner.jpg'  w='100%' />
+                    <Image src='/banner.webp'  w='100%' />
                 </Flex>
     )
 }
