@@ -73,7 +73,7 @@ export default function Card() {
                         EN-AR Engelli Araç Aparatları
                     </Text>
                     <Flex align='center' my='0.5rem'>
-                        <Image src='map.png'></Image>
+                        <Image src='map.png' alt='map'></Image>
                         <Flex flexDir='column' ml='1rem'>
                             <Text color='whiteAlpha.800' >
                                 İMES San.Sit. E Blok 503 Sk. No :22 Ümraniye / İSTANBUL

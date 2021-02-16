@@ -11,15 +11,14 @@ export default function Footer() {
                 </Link>
               </Flex>
               <Flex flexDir='column'>
-              <Link>
                 Ürünlerimiz
-                </Link><Link href='/sag-ayak-engelli'>
+                <Link href='/sag-ayak-engelli' mt='2'>
                 Sağ Ayak Engelli
-                </Link><Link href='/elden-gaz-kilitli'>
+                </Link><Link href='/elden-gaz-kilitli' mt='2'>
                 Sol Ayak Engelli Pro
-                </Link><Link href='/elden-gaz'>
+                </Link><Link href='/elden-gaz' mt='2'>
                 Sol Ayak Engelli
-                </Link><Link href='/sol-el-engelli'>
+                </Link><Link href='/sol-el-engelli' mt='2'>
                 Sol El Engelli
                 </Link>
               </Flex>
@@ -29,9 +28,9 @@ export default function Footer() {
                 </Link>
               </Flex>
           </Flex>
-        <Link align='center'>
+        <Text align='center'>
           Powered by CoreTech
-        </Link>
+        </Text>
       </Flex>
     )
 }

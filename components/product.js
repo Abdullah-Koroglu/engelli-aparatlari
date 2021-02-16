@@ -15,7 +15,7 @@ export default function Product({imgUrl , Header , Content , targetUrl}) {
                 w={["200px", "250px", "270px", "330px"]}
                 h={["200px", "250px", "270px", "330px"]}
                 objectFit="cover"
-                src={imgUrl} />
+                src={imgUrl} alt='engelli-araç-apartı'/>
             <Text textAlign='center' fontSize={["xl", "2xl", "3xl"]}>
                 {Header}
             </Text>

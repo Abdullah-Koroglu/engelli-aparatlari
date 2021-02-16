@@ -11,13 +11,14 @@ export default function Home() {
   return (
     <motion.div >
       <Head>
-        <title>(1)Engelli Araç Aparatları</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Engelli Araç Aparatları</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="engelli araç aparatları" />
       </Head>
 
       <main className={styles.main}>
         <Banner />
-        <Card/>
+        <Card />
       </main>
     </motion.div>
   )
