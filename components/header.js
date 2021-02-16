@@ -1,7 +1,7 @@
 import React from "react";
 import Head from 'next/head'
 import { useEffect, useState } from "react";
-
+import { motion } from "framer-motion";
 import { Box, Heading, Flex, Text, Button, Link, color, Center } from "@chakra-ui/react";
 import {
   Menu,
@@ -24,8 +24,12 @@ const MenuItems = ({ children }) => (
 
 // Note: This code could be better, so I'd recommend you to understand how I solved and you could write yours better :)
 const Header = props => {
-  const [show, setShow] = React.useState(false);
+  const [show, setShow] = React.useState(true);
   const handleToggle = () => setShow(!show);
+  const variants = {
+    visible: { opacity: 1},
+    hidden: { opacity: 0 },
+  }
 
   return (
     <Flex
@@ -35,22 +39,20 @@ const Header = props => {
       as="nav"
       align={{base : "flex-start" , md : "center"}}
       justify='space-between'
-      padding="1rem"
+      pt="1rem"
       px='2rem'
       bg="white"
       color="blue.800"
-      flexDir={{base : "row-reverse" , md: "column"}}
+      flexDir="column"
       boxShadow="dark-lg"
       {...props}
     >
-      <Flex  >
-        <Heading as="h1" fontSize={["sm", "lg", "2xl", "4xl"]} letterSpacing={"0rem"} pb='4' textAlign='center' >
+      <Flex  flexDir='row-reverse' justify={{base : "space-between" , md : "center"}} w='100%'>
+        <Heading as="h1" fontSize={["sm", "lg", "2xl", "4xl"]} letterSpacing={"-0.02rem"} pb='4' textAlign='center' >
           Engelli Araç Aparatları EN-AR
         </Heading>
-      </Flex>
 
-      <Flex 
-      flexDir='column'>
+     
         <Flex display={{ base: "block", md: "none" }} onClick={handleToggle} >
           <svg
           fill="blue"
@@ -61,14 +63,19 @@ const Header = props => {
           <title>Menu</title>
           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
         </svg>
+      </Flex>
         </Flex>
+        <motion.div 
+           layout
+           >
       <Flex
-        display={{ sm: show ? "block" : "none", md: "flex", base: show ? "block" : "none" }}
+        display={{ sm: !show ? "block" : "none", md: "flex", base: !show ? "block" : "none" }}
         width={{ sm: "auto", md: "auto" , base: "auto"}}
         alignItems="center"
         flexGrow={0.1}
         justify='center'
-        mt={{base : '7' , md : "0"}}
+        mt={{base : '0' , md : "0"}}
+        pb={{base : '1rem' , md : "0"}}
       >
         <Menu >
           <MenuItems>
@@ -98,9 +105,8 @@ const Header = props => {
             Popüler Sorular
           </Link></MenuItems>
         </Menu>
+      </Flex></motion.div>
       </Flex>
-      </Flex>
-    </Flex>
   );
 };
 

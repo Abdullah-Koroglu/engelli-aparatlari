@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import { useEffect, useState } from "react";
 import Header from '../components/header'
 import Footer from "../components/footer";
 import { ThemeProvider, theme, CSSReset } from "@chakra-ui/react"
@@ -17,7 +16,7 @@ function MyApp({ Component, pageProps, router }) {
       <Header />
       <CSSReset />
       <AnimatePresence>
-        <motion.div key={router.route}
+        <motion.div key="{router.route}"
           initial={{ x: 300, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: -300, opacity: 0 }}

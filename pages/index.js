@@ -5,11 +5,10 @@ import Card from "../components/card";
 import Banner from "../components/banner";
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <motion.div >
+    <div >
       <Head>
         <title>Engelli Araç Aparatları</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,6 +19,6 @@ export default function Home() {
         <Banner />
         <Card />
       </main>
-    </motion.div>
+    </div>
   )
 }

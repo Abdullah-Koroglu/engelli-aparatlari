@@ -1,7 +1,5 @@
 import { Text, Box, Heading, Flex, AspectRatio, Center, Spacer , SimpleGrid } from "@chakra-ui/react"
 import { Image } from "@chakra-ui/image"
-import { useEffect, useState } from "react";
-import styles from '../styles/Home.module.css'
 import Product from "../components/product";
 
 
