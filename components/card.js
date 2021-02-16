@@ -58,7 +58,7 @@ export default function Card() {
                 </SimpleGrid>
                
             </Flex>
-            <Flex bgImage="url('/night.png')" p='3rem' w='100%' flexDir='column' align='start'>
+            <Flex bgImage="url('/night.jpeg')" p='3rem' w='100%' flexDir='column' align='start'>
                 <Heading letterSpacing={"-0.1rem"} textAlign='center' color='white'>
                     İletişim
             </Heading>
