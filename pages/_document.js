@@ -11,7 +11,7 @@ class MyDocument extends Document {
             <Html lang='tr'>
                 <Head>
                     <link rel="icon" href="/favicon.ico" />
-                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                    <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                 </Head>
                 <body>
                     <Main />

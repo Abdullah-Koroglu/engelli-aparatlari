@@ -12,8 +12,8 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   background-color: #E2E8F0
   ;
 }
@@ -123,4 +123,8 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.circle{
+  border-radius: 45%;
 }

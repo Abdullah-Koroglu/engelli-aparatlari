@@ -16,9 +16,17 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Banner />
-        <Card />
+      <div>
+          <Banner />
+        </div>
+        <div> 
+          <Card />
+        </div>
       </main>
     </div>
   )
 }
+
+// Home.getInitialProps = async (ctx) => {
+  
+// }
