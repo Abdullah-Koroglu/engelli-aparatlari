@@ -50,3 +50,12 @@ export default function page() {
         </Flex>
     )
 }
+
+ // "@chakra-ui/image": "^1.0.7",
+    // "@chakra-ui/react": "^1.3.2",
+    // "@emotion/react": "^11.1.5",
+    // "@emotion/styled": "^11.1.5",
+    // "framer-motion": "^3.3.0",
+      // "next": "10.0.6",
+    // "react": "17.0.1",
+    // "react-dom": "17.0.1"
