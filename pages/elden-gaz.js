@@ -11,7 +11,7 @@ export default function page() {
                 <title>(1)Engelli Araç Aparatları</title>
             </Head>
 
-            <Flex mt='10rem' flexDir='column' align='center' mx='1rem'>
+            <Flex mt={{ base: "5rem", md: "11rem" }} flexDir='column' align='center' mx='1rem'>
                 <Box w='100%' align='center'>
                     <Heading as='h1' color='gray.800' my='1rem'>
                         İki Ayak Engelli

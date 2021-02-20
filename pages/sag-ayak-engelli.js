@@ -12,7 +12,7 @@ export default function page() {
             </Head>
 
             <Flex w='100%' flexDir='column' bg='white' exit={{ opacity: 0 }} initial={{ opacity: 0 }}>
-                <Flex mt='10rem' flexDir='column' mx='1rem' >
+                <Flex mt={{ base: "5rem", md: "11rem" }} flexDir='column' mx='1rem' >
                     <Box align='center'>
                         <Heading as='h1' color='gray.800' my='1rem'>
                             Sağ Ayak Engelli

@@ -10,7 +10,7 @@ export default function page() {
 
                 <title>(1)Engelli Araç Aparatları</title>
             </Head>
-            <Flex flexDir='column' mt='11rem' mx='1rem'>
+            <Flex flexDir='column' mt={{ base: "5rem", md: "11rem" }} mx='1rem'>
                 <Heading as='h1' color='gray.800' my='1rem'>
                     Sık Sorulan Sorular
                 </Heading>

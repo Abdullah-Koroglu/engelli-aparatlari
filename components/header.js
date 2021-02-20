@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react"
 
 const MenuItems = ({ children }) => (
-  <Text mt={{ base: 0, md: 0 }} mr={6} display="block">
+  <Text my={{ base:5, md: 5 }} mr={6} display="block">
     {children}
   </Text>
 );
@@ -48,9 +48,9 @@ const Header = props => {
       {...props}
     >
       <Flex  flexDir='row-reverse' justify={{base : "space-between" , md : "center"}} w='100%'>
-        <Heading as="h1" fontSize={["sm", "lg", "2xl", "4xl"]} letterSpacing={"-0.02rem"} pb='4' textAlign='center' >
+       <Link href='/'> <Heading as="h1" fontSize={["sm", "lg", "2xl", "4xl"]} letterSpacing={"-0.02rem"} pb='4' textAlign='center' >
           Engelli Araç Aparatları EN-AR
-        </Heading>
+        </Heading></Link>
 
      
         <Flex display={{ base: "block", md: "none" }} onClick={handleToggle} >
@@ -83,23 +83,23 @@ const Header = props => {
               Anasayfa
           </Link>
           </MenuItems>
-          <MenuButton as={Button} bg='white' mr='20px' px='-100px' py='-100px' fontWeight='medium'>
+          {/* <MenuButton as={Button} bg='white' mr='20px' px='-100px' py='-100px' fontWeight='medium'>
             Ürünlerimiz
   </MenuButton>
-          <MenuList>
-            <MenuItem><Link href='/sag-ayak-engelli'>
+          <MenuList> */}
+            <MenuItems><Link href='/sag-ayak-engelli'>
               Sağ Ayak Engelli
-</Link></MenuItem>
-            <MenuItem><Link href='/elden-gaz-kilitli'>
+</Link></MenuItems>
+            <MenuItems><Link href='/elden-gaz-kilitli'>
               İki Ayak Engelli Pro
-</Link></MenuItem>
-            <MenuItem><Link href='/elden-gaz'>
+</Link></MenuItems>
+            <MenuItems><Link href='/elden-gaz'>
               İki Ayak Engelli
-</Link></MenuItem>
-            <MenuItem><Link href='/sol-el-engelli'>
+</Link></MenuItems>
+            <MenuItems><Link href='/sol-el-engelli'>
               Sol El Engelli
-</Link></MenuItem>
-          </MenuList>
+</Link></MenuItems>
+          {/* </MenuList> */}
           <MenuItems>
           <Link href='/faq' _hover={{ stroke: 'white', opacity: '70%' }}>
             Popüler Sorular
